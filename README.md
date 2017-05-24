@@ -24,7 +24,6 @@ Experimental AngularJS and Microservice project - this is for development enviro
  - [Mongo DB](https://www.mongodb.com/)
  
 ### (Windows only installer)
-Note: There is only windows batch files for setting this applcation.
 - Run the windows-installer.bat
 ```
   ./windows-install.bat
