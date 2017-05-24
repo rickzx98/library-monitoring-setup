@@ -42,3 +42,10 @@ Experimental AngularJS and Microservice project - this is for development enviro
 - [GDS Api gateway](http://localhost:10080) -  http://localhost:10080
 - [Terminal](http://localhost:10085) - http://localhost:10085
 - [LRTS](http://localhost:10086) - http://localhost:10086
+
+#### Demo account
+
+```
+  username: gds
+  password: gds
+```

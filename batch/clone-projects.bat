@@ -10,4 +10,4 @@ git clone https://github.com/great-design-and-systems/authentication-module.git
 git clone https://github.com/great-design-and-systems/gds-lrts.git
 git clone https://github.com/great-design-and-systems/gds-terminal.git
 git clone https://github.com/great-design-and-systems/gds-ms-api.git
-cd ../
+cd ..
