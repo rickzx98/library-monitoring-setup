@@ -1,0 +1,1 @@
+call batch\run-app.bat
