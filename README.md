@@ -40,6 +40,6 @@ Note: There is only windows batch files for setting this applcation.
 ```
 
 ### Deployment hosts
-- (GDS Api gateway)[http://localhost:10080] -  http://localhost:10080
-- (Terminal)[http://localhost:10085] - http://localhost:10085
-- (LRTS)[http://localhost:10086] - http://localhost:10086
+- [GDS Api gateway](http://localhost:10080) -  http://localhost:10080
+- [Terminal](http://localhost:10085) - http://localhost:10085
+- [LRTS](http://localhost:10086) - http://localhost:10086
