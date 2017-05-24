@@ -1,0 +1,1 @@
+mongorestore -h localhost:27017 -d school-db ..\13002_school-module\school-db\demo-school-config
