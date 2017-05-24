@@ -16,7 +16,7 @@ Experimental AngularJS and Microservice project - this is for development enviro
 
 ## Web Client Applicatons
 - [Terminal](https://github.com/great-design-and-systems/gds-terminal) - User interface for the badge terminal.
-- [LRTS](https://github.com/great-design-and-systems/gds-lrts) - Main application for monitoring the time ins and time outs and also for managing student and faculty data.
+- [LRTS](https://github.com/great-design-and-systems/gds-lrts) - Main application for monitoring the time ins and time outs, reports and also for managing student and faculty data.
 
 ## Prerequisites 
   You must have the following installed first:
