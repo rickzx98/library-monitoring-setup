@@ -38,7 +38,7 @@ Experimental AngularJS and Microservice project - this is for development enviro
 
 ```
 
-### Deployment hosts
+### Deployed hosts
 - [GDS Api gateway](http://localhost:10080) -  http://localhost:10080
 - [Terminal](http://localhost:8085) - http://localhost:8085
 - [LRTS](http://localhost:8086) - http://localhost:8086
