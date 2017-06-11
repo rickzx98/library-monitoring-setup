@@ -24,9 +24,11 @@
   "homepage": "https://github.com/rickzx98/library-monitoring-setup#readme",
   "dependencies": {
     "authentication-module": "file:app\\authentication-module",
-    "fluid-chains": "^0.3.1",
+    "fluid-chains": "^0.3.4",
     "gds-config": "^0.1.45",
-    "school-module": "file:app\\school-module"
+    "gds-lrts": "file:app\\gds-lrts",
+    "school-module": "file:app\\school-module",
+    "socket.io": "^2.0.2"
   },
   "devDependencies": {
     "babel": "^6.23.0",

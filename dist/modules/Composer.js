@@ -23,22 +23,22 @@ new _authenticationModule.AuthenticationResourceChain();
 var Composer = function Composer(app) {
     _classCallCheck(this, Composer);
 
-    app.get('/gds', function (req, res) {
+    app.get('/api', function (req, res) {
         (0, _fluidChains.ExecuteChain)(['AuthenticationResourceChain', 'SchoolResourceChain'], {
             host: req.headers.host,
-            protocol: protocol(req),
-            domain: new _gdsConfig.GDSDomainDTO()
+            protocol: protocol(req)
         }, function (result) {
-            var domain = result.domain();
-            res.status(200).send(domain);
+            if (result.$err) {
+                console.log(result.$err());
+            }
+            res.status(200).send(result.domain());
         });
     });
 
-    app.get('/gds/:resource', function (req, res) {
+    app.get('/api/:resource', function (req, res) {
         (0, _fluidChains.ExecuteChain)(req.params.resource + 'Chain', {
             host: req.headers.host,
-            protocol: protocol(req),
-            domain: new _gdsConfig.GDSDomainDTO()
+            protocol: protocol(req)
         }, function (result) {
             var domain = result.domain();
             res.status(200).send(domain);

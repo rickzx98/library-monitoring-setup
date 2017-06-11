@@ -11,25 +11,25 @@ new AuthenticationResourceChain();
 
 export default class Composer {
     constructor(app) {
-        app.get('/gds', (req, res) => {
+        app.get('/api', (req, res) => {
             ExecuteChain([
                 'AuthenticationResourceChain',
                 'SchoolResourceChain'
             ], {
                     host: req.headers.host,
-                    protocol: protocol(req),
-                    domain: new GDSDomainDTO()
+                    protocol: protocol(req)
                 }, (result) => {
-                    const domain = result.domain();
-                    res.status(200).send(domain);
+                    if (result.$err) {
+                        console.log(result.$err());
+                    }
+                    res.status(200).send(result.domain());
                 });
         });
 
-        app.get('/gds/:resource', (req, res) => {
+        app.get('/api/:resource', (req, res) => {
             ExecuteChain(req.params.resource + 'Chain', {
                 host: req.headers.host,
-                protocol: protocol(req),
-                domain: new GDSDomainDTO()
+                protocol: protocol(req)
             }, (result) => {
                 const domain = result.domain();
                 res.status(200).send(domain);
